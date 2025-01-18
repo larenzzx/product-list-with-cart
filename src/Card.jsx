@@ -1,5 +1,5 @@
 import addCart from './assets/images/icon-add-to-cart.svg';
-
+import PropTypes from 'prop-types';
 
 function Card(props) {
     return(
@@ -27,6 +27,11 @@ function Card(props) {
             </div>
         </div>
     );
+}
+Card.propTypes = {
+    food: PropTypes.string,
+    description: PropTypes.string,
+    price: PropTypes.string,
 }
 
 export default Card 
