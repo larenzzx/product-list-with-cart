@@ -1,5 +1,6 @@
 // import addCart from './assets/images/icon-add-to-cart.svg';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
@@ -9,18 +10,11 @@ function Card(props) {
         <div className='container mt-8'>
             <div className='relative'>
 
-                <img className='rounded-md md:hidden' src={props.imageMobile} alt="" />
+                <img className='rounded-md md:hidden activeImg' src={props.imageMobile} alt="" />
                 <img className='rounded-md hidden md:block lg:hidden' src={props.imageTablet} alt="" />
                 <img className='rounded-md hidden lg:block' src={props.imageDesktop} alt="" />
 
-                <div className='flex items-center justify-center gap-3 absolute 
-                                w-48 px-4 py-3 rounded-full 
-                                border border-zinc-400 -bottom-6 left-1/2 
-                                -translate-x-1/2 transform z-10 bg-white'>
-                    {/* <img src={addCart} alt="" /> */}
-                    <FontAwesomeIcon icon={faCartPlus} className='text-orange-600 text-xl' />
-                    <p className='font-semibold'>Add to Cart</p>
-                </div>
+                <Button />
             </div>
 
 

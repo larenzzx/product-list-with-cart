@@ -7,3 +7,33 @@
 body {
   @apply font-RedHat bg-rose-50;
 }
+
+@layer components {
+  .activeImg {
+    @apply border-[3px] border-orange-700;
+  }
+}
+
+
+.btn {
+  @apply flex items-center justify-center gap-3 absolute w-48 px-4 py-3 rounded-full border border-zinc-400 -bottom-6 left-1/2 -translate-x-1/2 transform z-10 bg-white duration-100 hover:border-[3px] hover:border-orange-700;
+}
+
+
+/* Hide the arrows in most modern browsers (WebKit-based and Firefox) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  @apply bg-transparent
+}
+
+.add {
+  @apply justify-between bg-orange-700 text-white border-[3px] border-orange-700
+}
+
+
+
