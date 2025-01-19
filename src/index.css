@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 body {
-  @apply font-RedHat;
+  @apply font-RedHat bg-rose-50;
 }
