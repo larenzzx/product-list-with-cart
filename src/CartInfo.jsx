@@ -9,7 +9,7 @@ function CartInfo() {
                 
                 <div className="grid place-items-center">
                     <img src={emptyCart} alt="" className='w-full max-w-52' />
-                    <p className='mt-4 text-zinc-500 font-semibold'>Your added items will appear here</p>
+                    <p className='my-4 text-zinc-500 font-semibold'>Your added items will appear here</p>
                 </div>
             </div>
         </div>
