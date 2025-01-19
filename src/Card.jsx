@@ -1,5 +1,8 @@
-import addCart from './assets/images/icon-add-to-cart.svg';
+// import addCart from './assets/images/icon-add-to-cart.svg';
 import PropTypes from 'prop-types';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Card(props) {
     return(
@@ -14,7 +17,8 @@ function Card(props) {
                                 w-48 px-4 py-3 rounded-full 
                                 border border-zinc-400 -bottom-6 left-1/2 
                                 -translate-x-1/2 transform z-10 bg-white'>
-                    <img src={addCart} alt="" />
+                    {/* <img src={addCart} alt="" /> */}
+                    <FontAwesomeIcon icon={faCartPlus} className='text-orange-600 text-xl' />
                     <p className='font-semibold'>Add to Cart</p>
                 </div>
             </div>
