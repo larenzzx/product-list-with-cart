@@ -29,7 +29,7 @@ function Button() {
             >
 
                 <FontAwesomeIcon icon={faMinus} className='p-1 border-2 border-white rounded-full cursor-pointer' />
-                <input type="number" min="1" placeholder="1" className='w-10 text-center outline-none placeholder:text-white' />
+                <input type="number" min="1" placeholder="1" className='w-10 text-center outline-hidden placeholder:text-white' />
                 <FontAwesomeIcon icon={faPlus} className='p-1 border-2 border-white rounded-full cursor-pointer' />
             </div>
         </>
