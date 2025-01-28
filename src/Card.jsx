@@ -10,15 +10,15 @@ function Card(props) {
         <div className='container mt-8'>
             <div className='relative'>
 
-                <img className='rounded-md md:hidden activeImg' src={props.imageMobile} alt="" />
-                <img className='rounded-md hidden md:block lg:hidden' src={props.imageTablet} alt="" />
+                <img className='rounded-md md:hidden' src={props.imageMobile} alt="" />
+                <img className='rounded-md hidden md:block md:mx-auto lg:hidden' src={props.imageTablet} alt="" />
                 <img className='rounded-md hidden lg:block' src={props.imageDesktop} alt="" />
 
                 <Button />
             </div>
 
 
-            <div className='mt-8'>
+            <div className='mt-8 place-items-center'>
                 <span className='text-sm text-zinc-500'>{props.food}</span>
                 <p className='font-semibold'>{props.description}</p>
                 <p className='text-orange-600 font-semibold'>{props.price}</p>

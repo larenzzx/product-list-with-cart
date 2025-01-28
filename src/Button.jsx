@@ -5,23 +5,7 @@ function Button() {
 
     const addCart = document.querySelectorAll('.addCart');
     const editCart = document.querySelectorAll('.editCart');
-
-    // editCart.forEach(edit => {
-    //     edit.classList.add('hidden');
-    // });
-
-    addCart.forEach((cart, index) => {
-        cart.addEventListener('click', () => {
-            cart.classList.add('hidden');
-
-            if(editCart[index]) {
-                editCart[index].classList.remove('hidden');
-                editCart[index].classList.add('flex');
-            }
-
-        });
-
-    });
+    const myImg = document.querySelectorAll('img');
 
     
 
